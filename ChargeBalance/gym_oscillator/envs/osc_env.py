@@ -111,7 +111,7 @@ class oscillatorEnv(gym.Env):
     #Make vectorized form
     arrayed_version = np.array(self.y_state)
 
-    return arrayed_version, self.Reward(self.x_val,self.x_state,val), self.done, {} 
+    return arrayed_version, self.Reward(self.x_val,self.x_state,val), False, self.done, {} 
 
 
 

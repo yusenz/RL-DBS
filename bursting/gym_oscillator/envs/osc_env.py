@@ -103,7 +103,7 @@ class oscillatorEnv(gym.Env):
       #if sigmoid:
           #arrayed_version = sigmoid(arrayed_version)
           
-      return arrayed_version, self.Reward(self.x_val,np.array(self.x_state),self.y_val,val), self.done, {} 
+      return arrayed_version, self.Reward(self.x_val,np.array(self.x_state),self.y_val,val), False, self.done, {} 
 
   
   def reset(self):
